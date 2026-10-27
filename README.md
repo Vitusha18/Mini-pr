@@ -99,5 +99,5 @@ Environment files, dependency directories, build outputs, and training datasets 
 
 ## Repository
 
-GitHub: https://github.com/Vitusha18/Mini-pr
+GitHub: https://github.com/Vitusha18/Mini-pr.git
  
