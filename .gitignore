@@ -1,0 +1,98 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Production builds
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+
+# Node.js dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Python virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+**/.venv/
+**/.venv-*/
+**/venv/
+**/env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Production builds
+dist/
+build/
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Model and dataset artifacts (uncomment if you don't want these in Git)
+# *.pt
+# *.pth
+# *.onnx
+
+# Large raw training datasets — keep locally, exclude from Git
+ai-services/datasets/ip102_v1.1/images/
+
+# Python virtual environments
+**/.venv/
+**/.venv-*/
+**/venv/
+
+# Node dependencies
+**/node_modules/
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+
+ai-services/datasets/
