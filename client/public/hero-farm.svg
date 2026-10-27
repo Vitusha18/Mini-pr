@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="skyGrad" x1="400" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F0FDF4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#E2FBE8" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="0" y1="280" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#16A34A" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00A63C" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" y1="360" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#008C33" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#005A20" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="cropRow" x1="400" y1="420" x2="400" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00A63C"/>
+      <stop offset="100%" stop-color="#004D1B"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="650" cy="120" r="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE047" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#FDE047" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky and Sun Glow -->
+  <rect width="800" height="600" rx="24" fill="url(#skyGrad)"/>
+  <circle cx="650" cy="120" r="180" fill="url(#sunGlow)"/>
+  <circle cx="650" cy="120" r="45" fill="#FBBF24" opacity="0.3"/>
+  <circle cx="650" cy="120" r="30" fill="#F59E0B" opacity="0.4"/>
+
+  <!-- Subtle environmental grid / monitoring lines -->
+  <g opacity="0.15" stroke="#00A63C" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="80" y1="60" x2="720" y2="60"/>
+    <line x1="80" y1="140" x2="720" y2="140"/>
+    <line x1="80" y1="220" x2="720" y2="220"/>
+    <line x1="200" y1="40" x2="200" y2="280"/>
+    <line x1="400" y1="40" x2="400" y2="280"/>
+    <line x1="600" y1="40" x2="600" y2="280"/>
+  </g>
+
+  <!-- Background Hills -->
+  <path d="M0 320 Q200 240 420 300 T800 280 L800 600 L0 600 Z" fill="url(#hill1)"/>
+  
+  <!-- Precision Crop Field Waves -->
+  <path d="M0 390 Q220 310 500 370 T800 340 L800 600 L0 600 Z" fill="url(#hill2)"/>
+
+  <!-- Cultivated Crop Rows in Perspective -->
+  <g stroke="#22C55E" stroke-width="2" opacity="0.4">
+    <line x1="400" y1="360" x2="100" y2="600"/>
+    <line x1="400" y1="360" x2="220" y2="600"/>
+    <line x1="400" y1="360" x2="350" y2="600"/>
+    <line x1="400" y1="360" x2="480" y2="600"/>
+    <line x1="400" y1="360" x2="620" y2="600"/>
+    <line x1="400" y1="360" x2="760" y2="600"/>
+  </g>
+
+  <!-- Crop Vegetation Rows Details -->
+  <g fill="#15803D" opacity="0.6">
+    <ellipse cx="240" cy="450" rx="35" ry="12"/>
+    <ellipse cx="340" cy="470" rx="42" ry="14"/>
+    <ellipse cx="460" cy="460" rx="38" ry="13"/>
+    <ellipse cx="580" cy="480" rx="45" ry="15"/>
+    
+    <ellipse cx="180" cy="510" rx="48" ry="16"/>
+    <ellipse cx="320" cy="535" rx="55" ry="18"/>
+    <ellipse cx="480" cy="525" rx="52" ry="17"/>
+    <ellipse cx="640" cy="545" rx="58" ry="20"/>
+  </g>
+
+  <!-- Weather & IoT Sensor Stations -->
+  <g transform="translate(180, 290)">
+    <line x1="0" y1="0" x2="0" y2="60" stroke="#00A63C" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="8" fill="#00A63C"/>
+    <circle cx="0" cy="0" r="16" stroke="#00A63C" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+    <!-- Sensor wave pulses -->
+    <path d="M-12 -12 A 18 18 0 0 1 12 -12" stroke="#00A63C" stroke-width="1.5" fill="none" opacity="0.7"/>
+    <path d="M-18 -18 A 26 26 0 0 1 18 -18" stroke="#00A63C" stroke-width="1.5" fill="none" opacity="0.4"/>
+  </g>
+
+  <g transform="translate(580, 270)">
+    <line x1="0" y1="0" x2="0" y2="70" stroke="#00A63C" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="8" fill="#00A63C"/>
+    <circle cx="0" cy="0" r="16" stroke="#00A63C" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+    <path d="M-12 -12 A 18 18 0 0 1 12 -12" stroke="#00A63C" stroke-width="1.5" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Central Field Sensor Node -->
+  <g transform="translate(380, 320)">
+    <line x1="0" y1="0" x2="0" y2="80" stroke="#008C33" stroke-width="3.5" stroke-linecap="round"/>
+    <rect x="-12" y="-12" width="24" height="24" rx="6" fill="#00A63C"/>
+    <path d="M-5 -2 L0 5 L6 -4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="0" r="28" stroke="#00A63C" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5"/>
+  </g>
+</svg>
