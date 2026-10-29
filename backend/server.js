@@ -12,7 +12,8 @@ const startServer = async () => {
     // Connect to MongoDB before starting the server
     await connectDB();
 
-    const server = app.listen(PORT, () => {
+    // const server = app.listen(PORT, () => {
+      const server = app.listen(Number(PORT), '0.0.0.0', () => {
       console.log('====================================================');
       console.log('PestGuard AI - Early Pest Warning Backend Service');
       console.log(`Server listening on: http://localhost:${PORT}`);
